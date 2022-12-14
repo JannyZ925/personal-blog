@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="./home.css">
+    <script src="../../js/base.js"></script>
 </head>
+
 <body>
-    首页
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="../../images/avatar.jpg">
+            <h3>Janny</h3>
+        </div>
+        <!-- 导航 -->
+        <div id="navigation-container"></div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <h1>Janny 的博客</h1>
+        <p>行则将至。</p>
+        <div class="buttons">
+            <button id="read-btn">开始阅读</button>
+            <button id="github-btn">在GitHub查看</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            loadNavigation()
+            // 点击“开始阅读”按钮跳转到技术文章页面
+            let readBtn = document.getElementById('read-btn');
+            readBtn.onclick = function() {
+                window.location.href = '../articles/articles.html'
+            }
+
+            // 点击“在GitHub查看”按钮跳转到github仓库
+            let githubBtn = document.getElementById('github-btn');
+            githubBtn.onclick = function() {
+                window.location.href = 'https://github.com/JannyZ925/personal-blog'
+            }
+        }
+    </script>
 </body>
+
 </html>

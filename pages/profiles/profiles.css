@@ -1,0 +1,45 @@
+.main,
+.info,
+.message-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .info,
+.main .message-board {
+  flex-direction: column;
+}
+.main .info {
+  width: 30%;
+  height: 40vh;
+}
+.main .info img {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+.main .message-board {
+  height: 50vh;
+  flex: 1;
+}
+.main .message-board #message-input,
+.main .message-board #email-input {
+  padding: 10px;
+}
+.main .message-board .title {
+  font-size: 24px;
+  color: #42B883;
+}
+.main .message-board .email #email-input {
+  width: 270.8px;
+}
+.main .message-board #submit-button {
+  background-color: #42B883;
+  border: 2px solid #3dac7a;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+/*# sourceMappingURL=./profiles.css.map */

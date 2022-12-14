@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+.main .album {
+  display: flex;
+  width: 30%;
+  flex-wrap: wrap;
+}
+.main .album img {
+  height: 100px;
+  margin: 10px 20px;
+  border: 3px white solid;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
+}
+.main .shutter {
+  width: 800px;
+  height: 320px;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 5px lightgray;
+  border: 3px solid white;
+}
+.main ul li {
+  width: 160px;
+  position: relative;
+  transition: width 1s;
+}
+.main ul:hover li {
+  width: 40px;
+}
+.main ul li:hover {
+  width: 640px;
+}
+.main ul li h4 {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=./album.css.map */

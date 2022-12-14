@@ -1,0 +1,21 @@
+.main {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .card {
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+  margin-right: 40px;
+  background-color: #42b883;
+}
+.main .card .img {
+  width: 200px;
+}
+.main .card .mood {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=./moodLog.css.map */

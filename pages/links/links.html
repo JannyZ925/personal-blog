@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>友情链接</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="./links.css">
+    <script src="../../js/base.js"></script>
+
 </head>
+
 <body>
-    
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="../../images/avatar.jpg">
+            <h3>Janny</h3>
+        </div>
+        <!-- 导航 -->
+        <div id="navigation-container"></div>
+    </div>
+
+    <div class="main">
+        <ul class="links">
+            <li>
+                <img class="avatar" src="./images/lexmin.png">
+                <div>
+                    <a href="https://juejin.cn/user/3984285871645630">稀土掘金主页</a>
+                    <a href="https://github.com/lexmin0412">GitHub主页</a>
+                </div>
+            </li>
+            <li>
+                <img class="avatar" src="./images/JFarmer.png">
+                <div>
+                    <a href="https://github.com/HuaJFrame">GitHub主页</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        // 加载导航
+        window.onload = function() {
+            loadNavigation()
+        }
+    </script>
 </body>
+
 </html>

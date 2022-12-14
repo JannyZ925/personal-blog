@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #d6e7f4;
+}
+
+/* 头部区域 */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+  }
+  .header .avatar {
+    display: flex;
+    align-items: center;
+  }
+  .header .avatar img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .header #navigation-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header #navigation-container a {
+    color: black;
+    text-decoration: none;
+  }
+  .header #navigation-container a:hover {
+    color: #42B883;
+  }

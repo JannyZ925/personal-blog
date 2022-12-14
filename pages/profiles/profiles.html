@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人档案</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="./profiles.css">
+    <script src="../../js/base.js"></script>
+
 </head>
+
 <body>
-    
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="../../images/avatar.jpg">
+            <h3>Janny</h3>
+        </div>
+        <!-- 导航 -->
+        <div id="navigation-container"></div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <!-- 个人信息 -->
+        <div class="info">
+            <img src="../../images/avatar.jpg">
+            <p>姓名：张姣妮</p>
+            <p>出生日期：2001年5月25日</p>
+            <p>所在地区：湖南长沙</p>
+            <p>就读院校：长沙学院</p>
+        </div>
+        <!-- 留言板 -->
+        <div class="message-board">
+            <h3 class="title">留言板</h3>
+            <div class="messsage">
+                <label for="message-input">留言：</label>
+                <!-- cols="35" rows="10" -->
+                <textarea id="message-input" cols="35" rows="10" placeholder="欢迎留下您的意见或建议"></textarea>
+            </div>
+            <div class="email">
+                <label for="email-input">邮箱：</label>
+                <input type="email" id="email-input" placeholder="请输入您的有效邮箱地址">
+            </div>
+            <button id="submit-button">提交</button>
+        </div>
+    </div>
+
+    <script>
+        // 点击提交按钮弹出提示框
+        window.onload = function() {
+            loadNavigation()
+            let message = document.getElementById('message-input');
+            let email = document.getElementById('email-input');
+            let submitBtn = document.getElementById('submit-button');
+            submitBtn.onclick = function() {
+                if(message.value !== '' && email.value !== ''){
+                    alert("提交成功！")
+                    message.value = ''
+                    email.value = ''
+                } else {
+                    alert("留言和邮箱不能为空！")
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>

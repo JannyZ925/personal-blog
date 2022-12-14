@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>技术文章</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="./articles.css">
+    <script src="../../js/base.js"></script>
+
 </head>
 <body>
-    
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="../../images/avatar.jpg">
+            <h3>Janny</h3>
+        </div>
+        <!-- 导航 -->
+        <div id="navigation-container"></div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <ul class="articles">
+            <li><a href="https://blog.csdn.net/u012075383/article/details/78254482">1、用JDBC连接数据库</a></li>
+            <li><a href="https://blog.csdn.net/gaoqingliang521/article/details/108677301">2、IntelliJ IDEA创建Servlet最新方法</a></li>
+            <li><a href="https://blog.csdn.net/weixin_44985880/article/details/108040565">3、Java容器、面板及四大布局管理器应用讲解</a></li>
+            <li><a href="https://blog.csdn.net/cool_oyty/article/details/8038449">4、c语言实现ATM存取款系统（链表）</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        // 加载导航
+        window.onload = function() {
+            loadNavigation()
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+.main .articles li {
+  list-style: none;
+  padding: 30px;
+  border-bottom: 1px solid lightgrey;
+}
+.main .articles li a {
+  text-decoration: none;
+  color: #42B883;
+  font-weight: bold;
+  font-size: 20px;
+}
+/*# sourceMappingURL=./articles.css.map */

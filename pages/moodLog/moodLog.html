@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>心情日志</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="./moodLog.css">
+    <script src="../../js/base.js"></script>
+
 </head>
+
 <body>
-    
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="../../images/avatar.jpg">
+            <h3>Janny</h3>
+        </div>
+        <!-- 导航 -->
+        <div id="navigation-container"></div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <div class="card">
+            <img class="img" src="./images/sunset.jpg">
+
+            <p>日期：2022.10.19</p>
+
+            <div class="mood">
+                心情：<img src="./images/happy.png">
+            </div>
+
+            <p>今天的夕阳真好看！</p>
+        </div>
+
+        <div class="card">
+            <img class="img" src="./images/ice cream.jpg">
+
+            <p>日期：2022.6.10</p>
+
+            <div class="mood">
+                心情：<img src="./images/happy.png">
+            </div>
+
+            <p>吃到了好吃的冰淇淋！</p>
+        </div>
+
+        <div class="card">
+            <img class="img" src="./images/game.jpg">
+
+            <p>日期：2022.4.28</p>
+
+            <div class="mood">
+                心情：<img src="./images/normal.png">
+            </div>
+
+            <p>双人成行不愧是2021年度最受欢迎的游戏~</p>
+        </div>
+
+        <div class="card">
+            <img class="img" src="./images/milkTea.jpg">
+
+            <p>日期：2021.12.20</p>
+
+            <div class="mood">
+                心情：<img src="./images/sad.png">
+            </div>
+
+            <p>这个奶茶一般~</p>
+        </div>
+    </div>
+
+    <script>
+        // 加载导航
+        window.onload = function() {
+            loadNavigation()
+        }
+    </script>
+
 </body>
+
 </html>

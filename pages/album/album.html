@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>温馨相册</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="./album.css">
+    <script src="../../js/base.js"></script>
+
 </head>
+
 <body>
-    
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 头像 -->
+        <div class="avatar">
+            <img src="../../images/avatar.jpg">
+            <h3>Janny</h3>
+        </div>
+        <!-- 导航 -->
+        <div id="navigation-container"></div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <div class="album">
+            <img src="./images/1.jpg">
+            <img src="./images/2.jpg">
+            <img src="./images/3.jpg">
+            <img src="./images/4.jpg">
+            <img src="./images/5.jpg">
+            <img src="./images/6.jpg">
+            <img src="./images/7.jpg">
+            <img src="./images/8.jpg">
+        </div>
+        <ul class="shutter">
+            <li>
+                <h4>Toy Story2</h4>
+                <img src="./images/movie1.jpg">
+            </li>
+            <li>
+                <h4>Up</h4>
+                <img src="./images/movie2.jpg">
+            </li>
+            <li>
+                <h4>Cars2</h4>
+                <img src="./images/movie3.jpg">
+            </li>
+            <li>
+                <h4>Wall-E</h4>
+                <img src="./images/movie4.jpg">
+            </li>
+            <li>
+                <h4>KungFu Panda</h4>
+                <img src="./images/movie5.jpg">
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        // 加载导航
+        window.onload = function() {
+            loadNavigation()
+        }
+    </script>
+
 </body>
+
 </html>
